@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
-$user = "upnyvmnz_citra_kosmetik";
-$password = "citrakosmetik123";
+$user = "root";
+$password = "";
 $database = "upnyvmnz_citra_kosmetik";
 
 $koneksi = mysqli_connect($host, $user, $password, $database);
