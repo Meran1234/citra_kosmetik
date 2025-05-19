@@ -1,0 +1,153 @@
+[13-May-2025 19:45:49 UTC] PHP Warning:  Undefined variable $stmt1 in /home/upnyvmnz/public_html/update_pembeli.php on line 97
+[13-May-2025 19:45:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/upnyvmnz/public_html/update_pembeli.php:97
+Stack trace:
+#0 {main}
+  thrown in /home/upnyvmnz/public_html/update_pembeli.php on line 97
+[13-May-2025 19:46:05 UTC] PHP Warning:  Undefined variable $stmt1 in /home/upnyvmnz/public_html/update_pembeli.php on line 97
+[13-May-2025 19:46:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/upnyvmnz/public_html/update_pembeli.php:97
+Stack trace:
+#0 {main}
+  thrown in /home/upnyvmnz/public_html/update_pembeli.php on line 97
+[13-May-2025 19:46:05 UTC] PHP Warning:  Undefined variable $stmt1 in /home/upnyvmnz/public_html/update_pembeli.php on line 97
+[13-May-2025 19:46:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/upnyvmnz/public_html/update_pembeli.php:97
+Stack trace:
+#0 {main}
+  thrown in /home/upnyvmnz/public_html/update_pembeli.php on line 97
+[13-May-2025 19:46:06 UTC] PHP Warning:  Undefined variable $stmt1 in /home/upnyvmnz/public_html/update_pembeli.php on line 97
+[13-May-2025 19:46:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/upnyvmnz/public_html/update_pembeli.php:97
+Stack trace:
+#0 {main}
+  thrown in /home/upnyvmnz/public_html/update_pembeli.php on line 97
+[13-May-2025 19:46:07 UTC] PHP Warning:  Undefined variable $stmt1 in /home/upnyvmnz/public_html/update_pembeli.php on line 97
+[13-May-2025 19:46:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/upnyvmnz/public_html/update_pembeli.php:97
+Stack trace:
+#0 {main}
+  thrown in /home/upnyvmnz/public_html/update_pembeli.php on line 97
+[13-May-2025 19:46:43 UTC] PHP Warning:  Undefined variable $stmt1 in /home/upnyvmnz/public_html/update_pembeli.php on line 97
+[13-May-2025 19:46:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/upnyvmnz/public_html/update_pembeli.php:97
+Stack trace:
+#0 {main}
+  thrown in /home/upnyvmnz/public_html/update_pembeli.php on line 97
+[13-May-2025 20:00:10 UTC] PHP Warning:  Undefined array key "id_produk" in /home/upnyvmnz/public_html/update_keranjang.php on line 5
+[13-May-2025 20:00:10 UTC] PHP Warning:  Undefined array key "action" in /home/upnyvmnz/public_html/update_keranjang.php on line 6
+[13-May-2025 20:00:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'stok' in 'SELECT' in /home/upnyvmnz/public_html/update_keranjang.php:9
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_keranjang.php(9): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_keranjang.php on line 9
+[13-May-2025 20:32:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'stok' in 'SELECT' in /home/upnyvmnz/public_html/update_keranjang.php:11
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_keranjang.php(11): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_keranjang.php on line 11
+[13-May-2025 20:38:25 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'merek' in 'WHERE' in /home/upnyvmnz/public_html/update_keranjang.php:27
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_keranjang.php(27): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_keranjang.php on line 27
+[13-May-2025 21:38:46 UTC] PHP Warning:  Undefined array key "utama" in /home/upnyvmnz/public_html/update_alamat.php on line 12
+[13-May-2025 21:38:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'utama' in 'SET' in /home/upnyvmnz/public_html/update_alamat.php:29
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(29): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 29
+[13-May-2025 21:39:38 UTC] PHP Warning:  Undefined array key "id_alamat" in /home/upnyvmnz/public_html/update_alamat.php on line 5
+[13-May-2025 21:39:38 UTC] PHP Warning:  Undefined array key "utama" in /home/upnyvmnz/public_html/update_alamat.php on line 12
+[13-May-2025 21:39:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'utama' in 'SET' in /home/upnyvmnz/public_html/update_alamat.php:29
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(29): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 29
+[13-May-2025 21:59:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'upnyvmnz_citra_kosmetik.alamat' doesn't exist in /home/upnyvmnz/public_html/update_alamat.php:20
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(20): mysqli->prepare()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 20
+[13-May-2025 21:59:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'upnyvmnz_citra_kosmetik.alamat' doesn't exist in /home/upnyvmnz/public_html/update_alamat.php:20
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(20): mysqli->prepare()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 20
+[13-May-2025 21:59:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'upnyvmnz_citra_kosmetik.alamat' doesn't exist in /home/upnyvmnz/public_html/update_alamat.php:20
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(20): mysqli->prepare()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 20
+[13-May-2025 22:01:25 UTC] PHP Warning:  Undefined variable $conn in /home/upnyvmnz/public_html/update_alamat.php on line 31
+[13-May-2025 22:01:25 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/upnyvmnz/public_html/update_alamat.php:31
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(31): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 31
+[13-May-2025 22:01:31 UTC] PHP Warning:  Undefined variable $conn in /home/upnyvmnz/public_html/update_alamat.php on line 31
+[13-May-2025 22:01:31 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/upnyvmnz/public_html/update_alamat.php:31
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(31): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 31
+[13-May-2025 22:01:37 UTC] PHP Warning:  Undefined variable $conn in /home/upnyvmnz/public_html/update_alamat.php on line 31
+[13-May-2025 22:01:37 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/upnyvmnz/public_html/update_alamat.php:31
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(31): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 31
+[13-May-2025 22:01:43 UTC] PHP Warning:  Undefined variable $conn in /home/upnyvmnz/public_html/update_alamat.php on line 31
+[13-May-2025 22:01:43 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/upnyvmnz/public_html/update_alamat.php:31
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(31): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 31
+[13-May-2025 22:01:49 UTC] PHP Warning:  Undefined variable $conn in /home/upnyvmnz/public_html/update_alamat.php on line 31
+[13-May-2025 22:01:49 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/upnyvmnz/public_html/update_alamat.php:31
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(31): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 31
+[13-May-2025 22:02:23 UTC] PHP Warning:  Undefined variable $conn in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:02:23 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/upnyvmnz/public_html/update_alamat.php:30
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(30): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:02:24 UTC] PHP Warning:  Undefined variable $conn in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:02:24 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/upnyvmnz/public_html/update_alamat.php:30
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(30): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:02:25 UTC] PHP Warning:  Undefined variable $conn in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:02:25 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/upnyvmnz/public_html/update_alamat.php:30
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(30): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:02:30 UTC] PHP Warning:  Undefined variable $conn in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:02:30 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/upnyvmnz/public_html/update_alamat.php:30
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(30): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:03:16 UTC] PHP Warning:  Undefined variable $conn in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:03:16 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/upnyvmnz/public_html/update_alamat.php:30
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(30): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:03:16 UTC] PHP Warning:  Undefined variable $conn in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:03:16 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/upnyvmnz/public_html/update_alamat.php:30
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(30): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:03:16 UTC] PHP Warning:  Undefined variable $conn in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:03:16 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/upnyvmnz/public_html/update_alamat.php:30
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(30): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:07:59 UTC] PHP Warning:  Undefined variable $conn in /home/upnyvmnz/public_html/update_alamat.php on line 30
+[13-May-2025 22:07:59 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/upnyvmnz/public_html/update_alamat.php:30
+Stack trace:
+#0 /home/upnyvmnz/public_html/update_alamat.php(30): mysqli_query()
+#1 {main}
+  thrown in /home/upnyvmnz/public_html/update_alamat.php on line 30

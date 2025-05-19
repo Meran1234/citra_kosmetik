@@ -1,0 +1,232 @@
+<?php
+include_once('../koneksi.php');
+
+$query_produk = "SELECT COUNT(*) AS jumlah_produk FROM tbl_produk";
+$result_produk = mysqli_query($koneksi, $query_produk);
+$row_produk = mysqli_fetch_assoc($result_produk);
+$jumlah_produk = $row_produk['jumlah_produk'];
+
+$query_pembeli = "SELECT COUNT(*) AS jumlah_pembeli FROM tbl_pembeli";
+$result_pembeli = mysqli_query($koneksi, $query_pembeli);
+$row_pembeli = mysqli_fetch_assoc($result_pembeli);
+$jumlah_pembeli = $row_pembeli['jumlah_pembeli'];
+
+$query_pesanan = "SELECT COUNT(*) AS jumlah_pesanan FROM tbl_pesanan";
+$result_pesanan = mysqli_query($koneksi, $query_pesanan);
+$row_pesanan = mysqli_fetch_assoc($result_pesanan);
+$jumlah_pesanan = $row_pesanan['jumlah_pesanan'];
+
+$query_admin = "SELECT COUNT(*) AS jumlah_admin FROM tbl_admin";
+$result_admin = mysqli_query($koneksi, $query_admin);
+$row_admin = mysqli_fetch_assoc($result_admin);
+$jumlah_admin = $row_admin['jumlah_admin'];
+
+$query_penjualan = "SELECT COUNT(*) AS jumlah_penjualan FROM tbl_penjualan";
+$result_penjualan = mysqli_query($koneksi, $query_penjualan);
+$row_penjualan = mysqli_fetch_assoc($result_penjualan);
+$jumlah_penjualan = $row_penjualan['jumlah_penjualan'];
+
+$query_laporan = "SELECT COUNT(*) AS jumlah_laporan FROM tbl_laporan";
+$result_laporan = mysqli_query($koneksi, $query_laporan);
+$row_laporan = mysqli_fetch_assoc($result_laporan);
+$jumlah_laporan = $row_laporan['jumlah_laporan'];
+
+?>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citra Kosmetik</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sidebars/">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/admin.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="home" viewBox="0 0 16 16">
+            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+        </symbol>
+        <symbol id="data-pesanan" viewBox="0 0 16 16">
+            <path d="M3 1h9a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM3 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H3zm2 4h6v1H5V4zm0 3h6v1H5V7zm0 3h6v1H5v-1z" />
+        </symbol>
+        <symbol id="data-produk" viewBox="0 0 16 16">
+            <path d="M2 2a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2zm10 0H4v2h8V2z" />
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+        </symbol>
+        <symbol id="data-penjualan" viewBox="0 0 16 16">
+            <path d="M0 0h1v15h15v1H0V0zm14 12l-3-3-2 2-3-3-4 4 0.707 0.707L6 9.414l3 3 2-2 2.793 2.793L14 12z" />
+        </symbol>
+        <symbol id="laporan-penjualan" viewBox="0 0 16 16">
+            <path d="M3 1h9a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM3 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H3zm3 1h5v4H6V1z" />
+        </symbol>
+        <symbol id="logout" viewBox="0 0 24 24">
+            <path d="M16.59 7.41L15.17 8.83L18.34 12L15.17 15.17L16.59 16.59L21.17 12L16.59 7.41Z"></path>
+            <path d="M19 3H10C8.9 3 8 3.9 8 5V9H10V5H19V19H10V15H8V19C8 20.1 8.9 21 10 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z"></path>
+        </symbol>
+    </svg>
+
+    <header>
+        <div class="container-1" style="display: flex; align-items: center; margin-left: 10px;">
+            <button class="sidebar-toggler btn btn-outline-light" onclick="toggleSidebar()" style="border: none; padding: 0; background: transparent; width: auto; height: auto; margin-right: 10px;">
+                <i class="bi bi-list" style="font-size: 30px; color: black;" id="openSidebar"></i>
+            </button>
+            <p class="site-title" style="margin: 0;">Dashboard</p>
+        </div>
+    </header>
+
+
+    <div class="sidebar d-flex flex-column flex-shrink-0 p-3 text-white" id="sidebar" style="width: 280px;">
+        <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="../assets/img/ck.png" alt="Logo" width="50" height="50" class="me-2">
+            <span class="nama" style="margin-right: 50px; margin-bottom: 10px;">Citra Kosmetik</span>
+            <button class="btn btn-outline-light" onclick="toggleSidebar()" style="border: none; padding: 0; background: transparent; width: auto; height: auto; margin-bottom: 30px; margin-left:10px">
+                <i class="bi bi-x-circle" style="font-size: 20px; color: black;" id="closeSidebar"></i>
+            </button>
+        </a>
+        <hr class="hr">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#home" />
+                    </svg>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="dataproduk/dataproduk.php" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#data-produk" />
+                    </svg>
+                    Data Produk
+                </a>
+            </li>
+            <li>
+                <a href="datapembeli/datapembeli.php" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#people-circle" />
+                    </svg>
+                    Data Pembeli
+                </a>
+            </li>
+            <li>
+                <a href="datapesanan/datapesanan.php" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#data-pesanan" />
+                    </svg>
+                    Data Pesanan
+                </a>
+            </li>
+            <li>
+                <a href="dataadmin/dataadmin.php" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#people-circle" />
+                    </svg>
+                    Data Admin
+                </a>
+            </li>
+            <li>
+                <a href="datapenjualan/datapenjualan.php" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#data-penjualan" />
+                    </svg>
+                    Data Penjualan
+                </a>
+            </li>
+            <li>
+                <a href="datalaporan/datalaporan.php" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#laporan-penjualan" />
+                    </svg>
+                    Data Laporan Penjualan
+                </a>
+            </li>
+        </ul>
+        <hr style="color: black;">
+        <div class="d-flex justify-content-end">
+            <a href="../index.php" class="d-flex align-items-center text-decoration-none" style="margin-right: 20px;">
+                <span style="font-size: 1.25rem; margin-right: 10px; color: black;">Logout</span>
+                <svg class="bi" width="20" height="20" style="color: black;">
+                    <use xlink:href="#logout" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="cards-container" style="margin-top: 50px;">
+            <div class="col-md-4">
+                <div class="card1">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Produk</h5>
+                        <p class="card-text">Jumlah Data Produk : <?php echo $jumlah_produk; ?> Data</p>
+                        <a href="dataproduk/dataproduk.php" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card1">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Pembeli</h5>
+                        <p class="card-text">Jumlah Data Pembeli : <?php echo $jumlah_pembeli; ?> Data</p>
+                        <a href="datapembeli/datapembeli.php" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card1">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Pesanan</h5>
+                        <p class="card-text">Jumlah Data Pesanan : <?php echo $jumlah_pesanan; ?> Data</p>
+                        <a href="datapesanan/datapesanan.php" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards-container" style="margin-top: 50px;">
+            <div class="col-md-4">
+                <div class="card1">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Admin</h5>
+                        <p class="card-text">Jumlah Data Admin : <?php echo $jumlah_admin; ?> Data</p>
+                        <a href="dataadmin/dataadmin.php" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card1">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Penjualan</h5>
+                        <p class="card-text">Jumlah Data Penjualan : <?php echo $jumlah_penjualan; ?> Data</p>
+                        <a href="datapenjualan/datapenjualan.php" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card1">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Laporan Penjualan</h5>
+                        <p class="card-text">Jumlah Data Laporan : <?php echo $jumlah_laporan; ?> Data</p>
+                        <a href="datalaporan/datalaporan.php" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="../assets/js/sidebar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>

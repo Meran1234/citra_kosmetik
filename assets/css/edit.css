@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+h4 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card {
+    padding: 20px;
+    background-color: #DADADA;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="radio"] {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
